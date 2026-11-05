@@ -1,0 +1,2 @@
+# Azonositasduofeladat
+Csoportos feladat
