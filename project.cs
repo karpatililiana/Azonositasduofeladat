@@ -1,15 +1,39 @@
 // Vagyonvédelmi beléptető-szoftver
+using System;
+using System.IO;
 
-string azonositas(string rendszam, string auto_szin, string felhasznalo_nev, int ido)
-{/*
-    Console.Write("Kérem a felhasználónevet: ");
-    string felhasznalo_nev = Console.ReadLine();
-    Console.Write("Kérem az rendszámot: ");
-    string rendszam = Console.ReadLine();
-    Console.Write("Kérem az autó színét: ");
-    string szin = Console.ReadLine();
-    Console.Write("Kérem a belépési időt: ");
-    string ido = Console.ReadLine();*/
+
+string fajl = "adatok.txt";
+string[] adatok = new string[100];
+int x = 1;
+
+while (x == 1)
+{
+    Console.Write("Belépő Azonosítója (rendszám, vagy teljes név): ");
+    string adat = Console.ReadLine();
+
+    string ido = DateTime.Now.ToString();
+
+    if (adat.Contains("1") || adat.Contains("2") || adat.Contains("3") || adat.Contains("4") || adat.Contains("5") || adat.Contains("6") || adat.Contains("7") || adat.Contains("8") || adat.Contains("9") || adat.Contains("0"))
+    {
+        File.AppendAllText("adatok.txt", "Rendszám: " + adat + "|" + ido + "\n");
+    }
+    else
+    {
+        Console.Write("Igazolványszám: ");
+        string igazolvagy = Console.ReadLine();
+
+        File.AppendAllText("adatok.txt", "Teljes név: " + adat + "|" + "Igazolványszám: (azonosításhoz) " + igazolvagy + "|" + ido + "\n");
+    }
+
+    x++;
+    if (x == 0)
+    {
+        break;
+    }
+    else
+    {
+        continue;
+    }
 
 }
-Console.WriteLine(azonositas());
