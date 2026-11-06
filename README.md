@@ -8,6 +8,6 @@ Csoport tagok:
 
 Adatok beolvasása:
   - Felhasználónév/rendszám, idő
-  - Ha nem rendszám 
+  - Ha nem rendszám akkor igazolványszámot fog kérni
   - if, else
   - adat.txt tárolja az adatokat
