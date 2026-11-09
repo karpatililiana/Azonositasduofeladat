@@ -22,7 +22,7 @@ Csoportos feladat C# programozási nyelv
   - Be kell írni azt az azonosítót, amelyiket keresed és a programm kiírja.
   - Elírás esetén vagy hogy ha olyat ír be, ami nincs bent, akkor a programm kiírja, hogy ilyen adat nincs.
   
-5. gomb: A programm leállítása.
+4. gomb: A programm leállítása.
 
 > [!WARNING]
 > Ha bármilyen más számot ad meg, a programm nem fog működni
