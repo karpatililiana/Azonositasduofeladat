@@ -17,8 +17,12 @@ Csoportos feladat C# programozási nyelv
 2. gomb: Ha ezt választja az user, akkor a programnak azokat az azonosítókat kell megadni, amik távoztak.
   - Ha olyan azonosítót ad meg az ember, amelyik nincs bent a adatok között, akkor nem fog megtörténni a mentés és ki fogyja írni, hogy ilyen azonosító nincs.
   - Azon kívűl az azonosító helyes begadása után a gyűjtőfáljba autómatikusan el lesz mentve a távozás időpontja.
-
-3. gomb: A programm leállítása.
+    
+3. gomb: Ha ezt a gombot választja az user, akkor itt lehet keresgélni az adatok között.
+  - Be kell írni azt az azonosítót, amelyiket keresed és a programm kiírja.
+  - Elírás esetén vagy hogy ha olyat ír be, ami nincs bent, akkor a programm kiírja, hogy ilyen adat nincs.
+  
+5. gomb: A programm leállítása.
 
 > [!WARNING]
 > Ha bármilyen más számot ad meg, a programm nem fog működni
