@@ -1,4 +1,4 @@
-# Azonositasduofeladat
+# Portás szimulátor
 
 Csoportos feladat C# programozási nyelven.
 
