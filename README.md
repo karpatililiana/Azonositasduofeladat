@@ -9,7 +9,6 @@ Csoportos feladat C# programozási nyelven.
 ## A program célja:
 A program egy egyszerű beléptető rendszer működését mutatja be.
 Személyek és járművek belépését, távozását és keresését lehet vele rögzíteni.
-A program konzolos felületen működik.
 
 ## Program működése:
 
