@@ -1,29 +1,63 @@
-##### Azonositasduofeladat
-Csoportos feladat C# programozási nyelv
-## Csoport tagok: 
-  - Piri Nóra
-  - Kárpáti Liliána 
+# Azonositasduofeladat
 
-#### Programm működése:
+Csoportos feladat C# programozási nyelven.
 
-### Bemenet:
-## A felhasználónak három lehetősége van a menüben:
-1. gomb: Ha ezt választja az user, akkor a programm azt várja el, hogy beírjuk a típusát az érkező járműnek.
-  - Ha autó a bemenet -> A programm kéri fogja az Autó rendszámát, és autómatikusan elmenti a külön fáljba.
-  - Ha olyan rendszámot ad meg a felhasználó, ami már bent van, akkor autómatikusan kiírja, hogy ez a jármű már szerepel és előrről indul a programm.
-  - Ha bármi más a bemenet, akkor a belépőnek a nevét és igazolványszámát kell megadni. A fáljba az is el lesz mentve, hogy milyen járművel lépett be.
-  - Ugyanúgy fennál az, hogy ha már bent lévő azonosítót adunk meg, akkor nem fogja mégegyszer elmenteni.
-   
-2. gomb: Ha ezt választja az user, akkor a programnak azokat az azonosítókat kell megadni, amik távoztak.
-  - Ha olyan azonosítót ad meg az ember, amelyik nincs bent a adatok között, akkor nem fog megtörténni a mentés és ki fogyja írni, hogy ilyen azonosító nincs.
-  - Azon kívűl az azonosító helyes begadása után a gyűjtőfáljba autómatikusan el lesz mentve a távozás időpontja.
-    
-3. gomb: Ha ezt a gombot választja az user, akkor itt lehet keresgélni az adatok között.
-  - Be kell írni azt az azonosítót, amelyiket keresed és a programm kiírja.
-  - Elírás esetén vagy hogy ha olyat ír be, ami nincs bent, akkor a programm kiírja, hogy ilyen adat nincs.
-  
-4. gomb: A programm leállítása.
+## Csoporttagok:
+- Piri Nóra
+- Kárpáti Liliána
+
+## A program célja:
+A program egy egyszerű beléptető rendszer működését mutatja be.
+Személyek és járművek belépését, távozását és keresését lehet vele rögzíteni.
+A program konzolos felületen működik.
+
+## Program működése:
+
+### Főmenü:
+A program elindítása után négy lehetőség közül lehet választani:
+
+1. Belépés
+2. Távozás
+3. Keresés
+4. Kilépés a programból
+
+A kívánt opciót a hozzá tartozó szám beírásával lehet kiválasztani.
+
+### 1. Belépés:
+A program először bekéri az érkező típusát.
+A megadható típusok: autó, motor, roller, kerékpár vagy gyalog (esetleg egyéb, de akkor az nem számít).
+
+- Autó esetén a program bekéri a rendszámot.
+- Motor esetén a program szintén a rendszámot kéri.
+- Más típus esetén a belépő nevét és igazolványszámát kell megadni.
+- Sikeres belépéskor a program rögzíti az adatokat és a belépés időpontját.
+- Ha a rendszám vagy egy igazolványszám már szerepel a bent lévők között, a program nem veszi fel újra.
+
+### 2. Távozás:
+A távozás rögzítéséhez a bent lévő személy nevét vagy a jármű rendszámát kell megadni.
+
+- Ha az azonosító megtalálható a bent lévők között, a program rögzíti a távozás időpontját.
+- A távozó személy vagy jármű ezután kikerül a bent lévők nyilvántartásából.
+- Ha az azonosító nem található, a program erről üzenetet jelenít meg.
+
+### 3. Keresés:
+- A kereséshez a személy nevét vagy a jármű rendszámát kell megadni.
+- A program az `adatok.txt` fájlban keresi meg a megadott adatot.
+- A találatként megtalált belépési adatokat megjeleníti a képernyőn.
+- Ha nem talál megfelelő adatot, a program jelzi, hogy ilyen adat nincs.
+
+### 4. Kilépés:
+- A negyedik lehetőség kiválasztásával a program leáll.
+- A program bezárása után a főmenübe már nem lehet visszatérni.
+
+## Adatok mentése:
+- A program a belépési és távozási adatokat az `adatok.txt` nevű fájlba menti.
+- A fájlba kerülnek az azonosítók, valamint a rögzített időpontok.
+- A program a fájlba új adatokat ír, így a korábbi bejegyzések is megmaradnak.
+- Az `adatok.txt` fájl a program futtatási mappájában jön létre.
+
+> [!NOTE]
+> Bármelyik adatbekérésnél, ha üresen hagyja a helyet felhasználó, a program figyelmeztető üzenetet ad, és automatikusan megy a főmenübe.
 
 > [!WARNING]
-> Ha bármilyen más számot ad meg, a programm nem fog működni
-
+> Ha a menüben 1 és 4 közöttitől eltérő gombot vagy értéket adsz meg, a program figyelmeztet, hogy nincs ilyen opció, és újra megjeleníti a menüt.
